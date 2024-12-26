@@ -1,0 +1,19 @@
+############bary.py################
+The script used to create barycentric refinement.
+Reference: Patrick Ferell et. al. 
+
+############final_test.py###########
+I used this test's results for calibrating the stochastic model !!
+Ran on 16 cores
+u = 0 at t = 0, Re = 8*10**4, Dt = 0.025
+alpha = 0.01, beta = 8
+f_ext = project(as_vector([alpha*y*sin(beta*pi*x), 
+                           alpha*sin(beta*pi*x)*sin(beta*pi*y)]), V)
+
+t_end = 120
+
+#########final_test_save_h5_files_t50_onwards.py#######
+Ran 16 cores
+loading the .h5 file at t=50 for final_test and saving
+.h5 files every 4 time-steps
+
