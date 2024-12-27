@@ -1,0 +1,19 @@
+###########coarse_graining_residual_disp_calc_t50_to_t100.py########
+We are recording (u-u_avg) data from high res. simulations.
+We load the high res. vel from .h5 files, coarse-grain it and
+then record (u-u_avg).
+We also record the value of coarse-grained velocity at certain
+observation points (we have 9 points)
+The data is stored as .npz files. 
+t_start = 50, t_end = 100
+We store the coarse-grained velocity data at an interval of 
+1 time unit. 
+
+I am also saving the coarse grained fields as .pvd files and KE data as .txt file. 
+The .pvd file contain data till t = 99 although the name is till t =100 (same for KE)
+
+Note that the coarse-grained vel. data will be stored till t = 99 and the 
+(u-u_avg) data is stored till t=99.8
+
+###########coarse_graining_residual_disp_calc_t100_to_t110.py########
+doing the above procedure from t =100 to t = 110
